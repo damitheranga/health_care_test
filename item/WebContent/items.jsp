@@ -8,22 +8,57 @@ if (request.getParameter("itemCode") != null)
 	item itemObj = new item();
 	itemObj.connect();//For testing the connect method
 	
-	
-	
-
-
-	session.setAttribute("itemCode", request.getParameter("itemCode"));
+	/*session.setAttribute("itemCode", request.getParameter("itemCode"));
 	session.setAttribute("itemName", request.getParameter("itemName"));
 	session.setAttribute("itemPrice", request.getParameter("itemPrice"));
-	session.setAttribute("itemDesc", request.getParameter("itemDesc"));
+	session.setAttribute("itemDesc", request.getParameter("itemDesc"));*/
+	//only for inserting values for table 
+	
+
 	
 	String stsMsg = itemObj.insertItem(request.getParameter("itemCode"),
 	request.getParameter("itemName"),
 	request.getParameter("itemPrice"),
 	request.getParameter("itemDesc"));
+	
+	
 	session.setAttribute("statusMsg", stsMsg);
+	
 }
+ 
+ 
+ if (request.getParameter("itemID") != null)
+ {
+	 item itemObj = new item();
+	 String stsMsg = itemObj.deleteItem(request.getParameter("itemID"));
+	 session.setAttribute("statusMsg", stsMsg);
+ }
+ 
+ /*if (request.getParameter("itemCode") != null)
+ {
+	 item itemObj = new item();
+	 
+		itemObj.connect();//For testing the connect method
+		
+		session.setAttribute("itemCode", request.getParameter("itemCode"));
+		session.setAttribute("itemName", request.getParameter("itemName"));
+		session.setAttribute("itemPrice", request.getParameter("itemPrice"));
+		session.setAttribute("itemDesc", request.getParameter("itemDesc"));
+	 
+	 String stsMsg = itemObj.updateItem(request.getParameter("itemCode"),
+	 request.getParameter("itemName"),
+	 request.getParameter("itemPrice"),
+	 request.getParameter("itemDesc"));
+	 session.setAttribute("statusMsg", stsMsg);
+	 
+	 String itemID = request.getParameter("itemID");
+	 String sql ="select * from item where itemID='"+itemID+"'";
+	 resultSet = statement.executeQuery(sql);
+	 while(resultSet.next()){
+ }*/
 %>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,30 +106,23 @@ if (request.getParameter("itemCode") != null)
 	</form>
 	</div>
 	<br>
-	<table class="table">
-		<tr>
-			<th>Item Code:</th><th>Item Name:</th><th>Item Price:</th><th>Item Description</th><th>Update</th><th>Remove</th>
-		</tr>
-		
-		<tr>
-			<!--  <td>1234</td><td>Table</td><td>10,000/-</td><td>Mahogany</td>-->
-			<td><%out.print(session.getAttribute("itemCode")); %></td>
-			<td><%out.print(session.getAttribute("itemName")); %></td>
-			<td><%out.print(session.getAttribute("itemPrice")); %></td>
-			<td><%out.print(session.getAttribute("itemDesc")); %></td>
-			<td><input name="btn btn-primary" class="btn btn-primary" type="button" value="Update"></td>
-			<td><input name="btn btn-danger" class="btn btn-danger" type="button" value="Remove"></td>
-		</tr>
-	
-	
-	</table>
-	
-	<div class="alert alert-success" role="alert">
-  		<% out.print(session.getAttribute("statusMsg")); %>
-	</div>
-	
-	
-	
 
+		
+		<div class="alert alert-success" role="alert">
+  
+		<%
+		out.print(session.getAttribute("statusMsg"));
+		%>
+		</div>
+
+	<br>
+		<%
+		item itemObj = new item();
+		out.print(itemObj.readItems());
+		%>
 </body>
 </html>
+	
+
+
+
