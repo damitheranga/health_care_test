@@ -16,7 +16,7 @@ public class HospitalService {
 	@Path("/")
 	@Produces(MediaType.TEXT_HTML)
 	public String readItems() {
-		return "Hello Welcome Our";
+		return "Hello Welcome Our hospital";
 	}
 
 }
