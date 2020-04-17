@@ -1,6 +1,5 @@
 package com;
 
-import javax.swing.text.Document;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
