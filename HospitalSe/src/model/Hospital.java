@@ -64,9 +64,9 @@ public class Hospital {
 				return "Error while connecting to the database for reading.";
 			}
 			// Prepare the table to be displayed
-			output = "<table class=\"table\"><tr><th>Hospital Code</th>"
-					+ "<th>Hospital Name</th><th>Hospital Email</th>" + "<th>Hospital Description</th>"
-					+ "<th>Hospital Phone No</th>" + "<th>Update</th><th>Remove</th></tr>";
+			output = "<table border =\"1\" class=\"table\"><tr><th>Hospital Code</th>"
+					+ "<th>Hospital Name</th><th>Hospital Email</th>" + "<th>Hospital Description</th>" + "<th>Hospital District</th>"
+					+ "<th>Hospital Phone No</th>";
 			String query = "select * from hospital";
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(query);
@@ -77,6 +77,7 @@ public class Hospital {
 				String hospitalName = rs.getString("hospitalName");
 				String hospitalEmail = rs.getString("hospitalEmail");
 				String hospitalDesc = rs.getString("hospitalDesc");
+				String hospitalDistrict = rs.getString("hospitalDistrict");
 				String hospitalTel = rs.getString("hospitalTel");
 				// Add into the html table
 				output += "<tr><td>" + hospitalCode + "</td>";
@@ -84,14 +85,10 @@ public class Hospital {
 
 				output += "<td>" + hospitalEmail + "</td>";
 				output += "<td>" + hospitalDesc + "</td>";
+				output += "<td>" + hospitalDistrict + "</td>";
 				output += "<td>" + hospitalTel + "</td>";
 				// buttons
-				output += "<td><input name=\"btnUpdate\" "
-						+ " type=\"button\" class=\"btn btn-primary\" value=\"Update\"></td>"
-						+ "<td><form method=\"post\" action=\"items.jsp\">" + "<input name=\"btnRemove\" "
-						+ " type=\"submit\" class=\"btn btn-danger\" value=\"Remove\">"
-						+ "<input name=\"itemID\" type=\"hidden\" " + " value=\"" + hospitalID + "\">"
-						+ "</form></td></tr>";
+			
 			}
 			con.close();
 			// Complete the table
