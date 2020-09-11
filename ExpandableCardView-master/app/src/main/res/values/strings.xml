@@ -1,0 +1,292 @@
+<resources>
+    <string name="app_name">ExpandableCardView</string>
+
+
+    <string-array name="PointType">
+        <item>Not Set</item>
+        <item>MV Pole</item>
+        <item>Combine Run Pole</item>
+        <item>LV Pole</item>
+        <item>Transformer</item>
+    </string-array>
+
+    <string-array name="FeederPhase">
+        <item>Not Set</item>
+        <item>1 phase</item>
+        <item>3 Phase</item>
+
+    </string-array>
+
+
+    <string-array name="pole_base">
+        <item>Not Set</item>
+        <item>Concrete</item>
+        <item>Hard Soil</item>
+        <item>lose soil</item>
+    </string-array>
+
+    <string-array name="Amphere">
+        <item>Not Set</item>
+        <item>30A</item>
+        <item>60A</item>
+
+    </string-array>
+
+    <string-array name="connectionType">
+        <item>Not Set</item>
+        <item> Normal 1 phase</item>
+        <item> Normal 3 phase 30A</item>
+        <item> Normal 3 phase 60A</item>
+        <item>Solar 1 Phase</item>
+        <item> Solar 3 Phase 30A</item>
+        <item>Solar 3 Phase 60A</item>
+    </string-array>
+
+
+    <string-array name="wireType">
+        <item>Not Set</item>
+        <item> Aluminium</item>
+
+    </string-array>
+
+
+    <string-array name="pole_size">
+        <item>Not Set</item>
+        <item>6</item>
+        <item>8.3</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>13</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+
+    <string-array name="pole_capcity">
+        <item>Not Set</item>
+        <item>100</item>
+        <item>225</item>
+        <item>300</item>
+        <item>350</item>
+        <item>500</item>
+        <item>850</item>
+        <item>1200</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="pole_envir">
+        <item>Main Road</item>
+        <item>By Road</item>
+        <item>Paddy</item>
+        <item>Tea Estate</item>
+        <item>Rubber Estate</item>
+        <item>Foresty</item>
+
+    </string-array>
+
+
+    <string-array name="nos">
+        <item>1 phase 30A</item>
+        <item>3 phase 30A</item>
+        <item>3 phase 60A</item>
+    </string-array>
+
+
+    <string-array name="SubstationCapacity">
+        <item>Not Set</item>
+        <item>100kVa</item>
+        <item>250kVa</item>
+        <item>1000Kva</item>
+        <item>1500kVa</item>
+    </string-array>
+
+    <string-array name="VoltageRatio">
+        <item>Not Set</item>
+        <item>33kV / 400V</item>
+        <item>11kV / 400V</item>
+    </string-array>
+
+    <string-array name="SubstationType">
+        <item>Not Set</item>
+        <item>Distribution</item>
+        <item>Bulk</item>
+        <item>Dist. / Bulk</item>
+    </string-array>
+
+    <string-array name="SubstationInstallationType">
+        <item>Not Set</item>
+        <item>Single Pole</item>
+        <item>Double Pole</item>
+        <item>Plinth</item>
+        <item>Concrete Slab</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="MainSpare">
+        <item>Not Set</item>
+        <item>Main</item>
+        <item>Spare</item>
+    </string-array>
+
+    <string-array name="LvMv">
+        <item>Not Set</item>
+        <item>LV</item>
+    </string-array>
+
+    <string-array name="pole_categoryLV">
+        <item>MV Pole</item>
+        <item>DDLO</item>
+        <item>LBS</item>
+        <item>ABS</item>
+        <item>Auto Recloser</item>
+        <item>Section Analyser</item>
+        <item>Transformer</item>
+    </string-array>
+
+    <string-array name="pole_categoryMV">
+        <item>LV Pole</item>
+        <item>Transformer</item>
+    </string-array>
+
+    <string-array name="pole_type">
+        <item>Not Set</item>
+        <item>RC</item>
+        <item>LW</item>
+        <item>Wooden</item>
+        <item>Steel</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+    <string-array name="pole_condition">
+        <item>Not Set</item>
+        <item>Good</item>
+        <item>Damaged</item>
+        <item>Brocken</item>
+    </string-array>
+
+    <string-array name="line_type">
+        <item>Not Set</item>
+        <item>1P AAC</item>
+        <item>1P ABC</item>
+        <item>2P AAC</item>
+        <item>2P ABC</item>
+        <item>3P AAC</item>
+        <item>3P ABC</item>
+        <item>3P AAC Lamp</item>
+        <item>3P ABC Lamp</item>
+    </string-array>
+
+    <string-array name="environment">
+        <item>Not Set</item>
+        <item>Road</item>
+        <item>Paddy</item>
+        <item>Rubber</item>
+        <item>Forest</item>
+    </string-array>
+
+    <string-array name="transformer_type">
+        <item>Not Set</item>
+        <item>Dristribution</item>
+        <item>Bulk</item>
+    </string-array>
+
+    <string-array name="installation_type">
+        <item>Not Set</item>
+        <item>Single Pole</item>
+        <item>Double Pole</item>
+        <item>Concrete Slab</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="support">
+        <item>No</item>
+        <item>Stay</item>
+        <item>Strut</item>
+    </string-array>
+
+    <string-array name="AreaName">
+        <item>1	Colombo(North)</item>
+        <item>2 Colombo(East)</item>
+        <item>3 Colombo(South)</item>
+        <item>4	Colombo(West)</item>
+        <item>16 Jaffna</item>
+        <item>17 Peradeniya</item>
+        <item>18 Kilinochchi</item>
+        <item>19 Chilaw</item>
+        <item>20 Kegalle</item>
+        <item>21 Rathmalana</item>
+        <item>22 Nawalapitiya</item>
+        <item>23 Diyatalawa</item>
+        <item>24 Ampara</item>
+        <item>25 Hambantota</item>
+        <item>26 Ratnapura</item>
+        <item>27 Ja-Ela</item>
+        <item>28 Ambalangoda</item>
+        <item>29 Anuradhapura</item>
+        <item>30 Matale</item>
+        <item>31 Horana</item>
+        <item>32 Batticaloa</item>
+        <item>33 Minneriya</item>
+        <item>34 Trincomale</item>
+        <item>35 Nuwaraeliya</item>
+        <item>36 Badulla</item>
+        <item>37 Negombo</item>
+        <item>38 Dehiwala</item>
+        <item>39 Monaragala</item>
+        <item>40 Kundasala</item>
+        <item>41 Homagama</item>
+        <item>42 Sri-Jayawardhanapura</item>
+        <item>43 Kurunegala</item>
+        <item>44 Kalutara</item>
+        <item>45 Galle</item>
+        <item>46 Avissawella</item>
+        <item>47 Matara</item>
+        <item>48 Kelaniya</item>
+        <item>49 Gampaha</item>
+        <item>50 Wennappuwa</item>
+        <item>52 Kahawatta</item>
+        <item>53 Veyangoda</item>
+        <item>54 Akuressa</item>
+        <item>57 Vavuniya</item>
+        <item>59 Kuliyapitiya</item>
+        <item>61 Ginigathena</item>
+        <item>62 Thangalle</item>
+        <item>63 Eheliyagoda</item>
+        <item>64 Embilipitiya</item>
+        <item>65 Bandaragama</item>
+        <item>66 Divulapitiya</item>
+        <item>69 Kalmunei</item>
+        <item>71 Katugastota</item>
+        <item>76 Wariyapola</item>
+        <item>77 Kandy City</item>
+        <item>78 Kekirawa</item>
+        <item>79 Ruwanwella</item>
+        <item>80 Galagedara</item>
+        <item>82 Mawanella</item>
+        <item>83 Puttalam</item>
+        <item>84 Narammala</item>
+        <item>85 Dambulla</item>
+        <item>86 Baddegama</item>
+        <item>99 Test(KandyCity)</item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">LocationAssist</string>
+    <string name="nav_header_subtitle">CEB</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
